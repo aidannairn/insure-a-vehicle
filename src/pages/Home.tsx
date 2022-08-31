@@ -8,6 +8,7 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import arrowImg from "../images/arrow.png";
 import "../App.css";
 import { Box } from "@mui/system";
+import { DiscoverInsurance } from "../components/DiscoverInsurance/DiscoverInsurance";
 
 interface HomeProps {}
 
@@ -60,6 +61,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
           nemo.
         </p>
       </div>
+      <DiscoverInsurance alignment={alignment}/>
     </div>
   );
 };

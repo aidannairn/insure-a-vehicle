@@ -1,0 +1,87 @@
+.insurance-container {
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 10%);
+}
+
+.list-content {
+  display: flex;
+  justify-content: flex-end;
+  grid-gap: 4em;
+  margin-right: 1em;
+}
+
+li.item1 {
+  background-color: #1078ce;
+}
+
+li.item2 {
+  background-color: #57a3e2;
+}
+
+li.item3 {
+  background-color: #a7c3da;
+}
+
+.list-content li {
+  height: 456px;
+  width: 392px;
+  left: 0px;
+  top: 0px;
+  border-radius: 15px;
+}
+
+.list-content img {
+  width: 385px;
+}
+
+.list-content span {
+  position: relative;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.list-content p {
+  font-weight: 700;
+  font-size: 26px;
+  color: white;
+}
+
+table.insurance-table {
+    border-collapse: collapse;
+    margin-left: 1em;
+}
+
+table.insurance-table tr {
+    border-bottom: 1px solid #989898;
+}
+
+table.insurance-table img {
+    width: 71px;
+}
+
+table.insurance-table th {
+    left: 2em;
+    position: relative;
+    text-align: left;
+}
+
+table.insurance-table .first-row {
+    padding-left: 14em;
+    padding-right: 9em;
+}
+
+table.insurance-table .second-row {
+    padding-left: 15em;
+    padding-right: 10em;
+}
+
+table.insurance-table .third-row {
+    padding-left: 14.5em;
+    padding-right: 9.5em;
+}
+
+
