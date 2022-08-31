@@ -1,0 +1,93 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.header-container {
+  display: block;
+  padding: 0 40px 25px 40px;
+}
+
+.logo-container {
+  float: left;
+  padding: 20px;
+}
+
+.header-content {
+  float: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+  display: block;
+}
+
+ul.left-menu {
+  float: left;
+  color: white;
+  padding: 0;
+}
+
+ul.right-menu {
+  float: right;
+  color: white;
+  padding-right: 75px;
+}
+
+.main-menu {
+  float: left;
+  width: 100%;
+  background: #0076be;
+  text-align: left;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -3px;
+  z-index: 100;
+}
+
+.right-menu li,
+.left-menu li {
+  float: left;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.account-panel {
+  float: left;
+  padding-right: 10px;
+}
+
+a.phone-number {
+  padding-right: 10px;
+}
+
+span.or {
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 12px;
+    position: relative;
+    bottom: 1px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  color: white;
+}
+
+.phone-icon,
+.location-icon,
+.person-icon {
+  position: relative;
+  top: 6px;
+  color: #0076be;
+}

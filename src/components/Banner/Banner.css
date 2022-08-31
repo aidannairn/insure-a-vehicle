@@ -1,0 +1,26 @@
+* {
+    font-family: "Open Sans", sans-serif;
+  }
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.text-box {
+    text-align: left;
+    float: left;
+    bottom: 20em;
+    left: 15em;
+    position: absolute;
+}
+
+.btn-box button {
+    font-weight: 600;
+    height: 60px;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
