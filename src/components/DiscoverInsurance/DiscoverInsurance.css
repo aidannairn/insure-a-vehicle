@@ -28,14 +28,14 @@ li.item3 {
 
 .list-content li {
   height: 456px;
-  width: 392px;
+  width: 330px;
   left: 0px;
   top: 0px;
   border-radius: 15px;
 }
 
 .list-content img {
-  width: 385px;
+  width: 330px;
 }
 
 .list-content span {
@@ -51,37 +51,49 @@ li.item3 {
 }
 
 table.insurance-table {
-    border-collapse: collapse;
-    margin-left: 1em;
+  border-collapse: collapse;
+  margin-left: 1em;
 }
 
 table.insurance-table tr {
-    border-bottom: 1px solid #989898;
+  border-bottom: 1px solid #989898;
 }
 
 table.insurance-table img {
-    width: 71px;
+  width: 71px;
 }
 
 table.insurance-table th {
-    left: 2em;
-    position: relative;
-    text-align: left;
+  left: 2em;
+  position: relative;
+  text-align: left;
+}
+
+table.insurance-table .second-row,
+table.insurance-table .third-row {
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 table.insurance-table .first-row {
-    padding-left: 14em;
-    padding-right: 9em;
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
-table.insurance-table .second-row {
-    padding-left: 15em;
-    padding-right: 10em;
+.arrow-ico {
+  width: 28px;
 }
 
-table.insurance-table .third-row {
-    padding-left: 14.5em;
-    padding-right: 9.5em;
+.feature {
+  padding: 10px;
 }
 
+.up-arrow {
+  position: relative;
+  top: 5px;
+}
 
+.down-arrow {
+  position: relative;
+  top: 10px;
+}

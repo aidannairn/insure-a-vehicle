@@ -31,13 +31,13 @@ ul {
 ul.left-menu {
   float: left;
   color: white;
-  padding: 0;
+  padding: 0 0 0 38px;
 }
 
 ul.right-menu {
   float: right;
   color: white;
-  padding-right: 75px;
+  padding-right: 38px;
 }
 
 .main-menu {
@@ -46,8 +46,6 @@ ul.right-menu {
   background: #0076be;
   text-align: left;
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
   margin-top: -3px;
   z-index: 100;
 }

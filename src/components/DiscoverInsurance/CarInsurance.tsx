@@ -2,17 +2,24 @@ import React from "react";
 import comprehensiveImg from "../../images/comprehensive.png";
 import thirdpPropertyImg from "../../images/thirdparty-property.png";
 import thirdpTheftImg from "../../images/thirdparty-theft.png";
-import checkIco from "../../images/check.png";
-import xIco from "../../images/x-icon.png";
+import { CarInsuranceTable } from "./CarInsuranceTable";
+import upArrowIco from "../../images/up-arrow.png";
+import downArrowIco from "../../images/down-arrow.png";
 
 interface CarInsuranceProps {}
 
 export const CarInsurance: React.FC<CarInsuranceProps> = ({}) => {
-
   const [isOpen, setIsOpen] = React.useState(false);
+
   const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState)
-}
+    setIsOpen((prevState) => !prevState);
+  };
+
+  const [showMore, setShowMore] = React.useState(true);
+
+  const handleShowMore = () => {
+    setShowMore(!showMore);
+  };
 
   return (
     <div className="car-insurance">
@@ -46,188 +53,15 @@ export const CarInsurance: React.FC<CarInsuranceProps> = ({}) => {
             </span>
           </li>
         </ul>
-        <table className="insurance-table">
-          <tr>
-            <th>Accidental loss or damage</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={checkIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Fire damage</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={checkIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Theft or illegal conversion</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Legal Liability</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={xIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Vehicle Removal</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={xIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Accidental loss or damage</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={checkIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Fire damage</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={checkIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Theft or illegal conversion</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Legal Liability</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={xIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Vehicle Removal</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={xIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Accidental loss or damage</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={checkIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Fire damage</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={checkIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Theft or illegal conversion</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={checkIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Legal Liability</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={xIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-          <tr>
-            <th>Vehicle Removal</th>
-            <td className="first-row">
-              <img src={checkIco} />
-            </td>
-            <td className="second-row">
-              <img src={xIco} />
-            </td>
-            <td className="third-row">
-              <img src={xIco} />
-            </td>
-          </tr>
-        </table>
+        <CarInsuranceTable showMore={showMore} />
+        <div className="feature">
+          <a onClick={handleShowMore} className="features">
+            {showMore ? "Show all features" : "Hide features"}
+            <span className={showMore ? "down-arrow" : "up-arrow"}>
+              {showMore ? <img src={downArrowIco} className="arrow-ico"/> : <img src={upArrowIco} className="arrow-ico"/>}
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );
