@@ -88,4 +88,9 @@ span.or {
   position: relative;
   top: 6px;
   color: #0076be;
+  width: 28px;
+}
+
+.person-icon {
+  padding-right: 10px;
 }

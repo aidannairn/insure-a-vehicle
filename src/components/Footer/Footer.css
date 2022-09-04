@@ -1,0 +1,101 @@
+.footer-container {
+    background: #2D2D2D;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-menu{
+    color: #FFFFFF;
+    padding-top: 50px;
+    line-height: 1.5;
+}
+
+.footer-menu ul {
+    padding: 0;
+    margin-top: 0;
+}
+
+.footer-menu h3 {
+    margin: 0;
+}
+
+.footer-menu ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-instagram {
+    color: #FFFFFF;
+}
+
+.footer-facebook {
+    height: 29px;
+    position: relative;
+    bottom: 4px;
+}
+
+.footer-map {
+    height: 42px;
+}
+
+.footer-phone {
+    height: 38px;
+}
+
+.social-media a {
+    padding-right: 32px;
+}
+
+.contact-us a {
+    padding-right: 10px;
+}
+
+.social-media h2,
+.contact-us h2,
+.sign-up h2 {
+    color: #FFFFFF;
+}
+
+.sign-up {
+    padding-left: 50px;
+}
+
+.footer-input {
+    width: 300px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.footer-btn {
+    width: 100px;
+    height: 46px;
+    border-radius: 10px;
+    border: none;
+    background: #1078CE;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.footer-middle,
+.footer-bottom {
+    display: flex;
+    padding-left: 3em;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: end;
+    padding-right: 3em;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+}

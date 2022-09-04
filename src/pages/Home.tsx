@@ -9,6 +9,7 @@ import arrowImg from "../images/arrow.png";
 import "../App.css";
 import { Box } from "@mui/system";
 import { DiscoverInsurance } from "../components/DiscoverInsurance/DiscoverInsurance";
+import { Footer } from "../components/Footer/Footer";
 
 interface HomeProps {}
 
@@ -62,6 +63,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
         </p>
       </div>
       <DiscoverInsurance alignment={alignment}/>
+      <Footer />
     </div>
   );
 };

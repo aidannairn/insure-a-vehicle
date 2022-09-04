@@ -6,15 +6,11 @@
     width: 100%;
 }
 
-.banner-container {
-    position: relative;
-}
-
 .text-box {
     text-align: left;
     float: left;
-    bottom: 20em;
-    left: 15em;
+    bottom: 38em;
+    left: 5em;
     position: absolute;
 }
 
