@@ -1,3 +1,4 @@
+import PolicyTypes from './PolicyTypes/PolicyTypes'
 import './driver-policy.css'
 
 interface DriverPolicyProps {
@@ -15,6 +16,7 @@ const DriverPolicy: React.FC<DriverPolicyProps> = ({ name }) => {
       </div>
       <div className="policy">
         <p>Which policy would you like {name} to be covered with?</p>
+        <PolicyTypes />
         <p>How much would you like to insure {name}'s car for?</p>
         <input className="insurance-amount" type="text" placeholder="Enter amount (up to $4,000)" />
         <p>How much would you like {name}'s policy excess to be?</p>
