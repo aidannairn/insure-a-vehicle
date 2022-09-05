@@ -1,10 +1,15 @@
+import DriverPolicy from "./DriverPolicy/DriverPolicy"
+
 interface Props {
 
 }
 
 const PoliciesAndExtras: React.FC<Props> = () => {
   return (
-    <div>PoliciesAndExtras</div>
+    <div>
+      <DriverPolicy name="Jack" />
+      <DriverPolicy name="Jill" />
+    </div>
   )
 }
 

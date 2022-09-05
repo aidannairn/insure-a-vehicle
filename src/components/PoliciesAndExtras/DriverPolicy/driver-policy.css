@@ -1,0 +1,24 @@
+.driver-policy {
+  border-radius: 0.5rem;
+}
+
+.driver-policy > .driver {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 0.8em;
+  border-radius: inherit;
+  background-color: #004681;
+  color: white;
+}
+
+.driver-policy:nth-of-type(2n) > .driver {
+  background-color: #2376BD;
+}
+
+.driver-policy > .driver > img {
+  height: 2.5rem;
+  cursor: pointer;
+}
