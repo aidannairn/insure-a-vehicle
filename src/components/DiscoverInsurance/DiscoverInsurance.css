@@ -190,3 +190,12 @@ img.mechanic {
   padding: 20px 0 15px 0;
   font-weight: 700;
 }
+
+.bottom-insurance .other-plan {
+  padding-bottom: 20px;
+}
+
+.bottom-insurance .other-plan img {
+  position: relative;
+  top: 16px;
+}

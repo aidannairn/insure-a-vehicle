@@ -13,6 +13,7 @@ import { Footer } from "../components/Footer/Footer";
 import { FamilyPlan } from "../components/FamilyPlan/FamilyPlan";
 import { WhyTurners } from "../components/WhyTurners/WhyTurners";
 import { Question } from "../components/Question/Question";
+import { Testimonials } from "../components/Testimonials/Testimonials";
 
 interface HomeProps {}
 
@@ -69,6 +70,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
       <FamilyPlan />
       <WhyTurners />
       <Question />
+      <Testimonials />
       <Footer />
     </div>
   );
