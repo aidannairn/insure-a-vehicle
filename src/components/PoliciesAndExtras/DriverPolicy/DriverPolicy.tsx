@@ -5,6 +5,8 @@ interface DriverPolicyProps {
 }
 
 const DriverPolicy: React.FC<DriverPolicyProps> = ({ name }) => {
+  const excessAmounts: number[] = [100, 400, 500, 1000, 2000]
+
   return (
     <div className="driver-policy">
       <div className="driver">
@@ -12,6 +14,17 @@ const DriverPolicy: React.FC<DriverPolicyProps> = ({ name }) => {
         <img src="/images/circle-arrow-white.png" alt="Arrow" />
       </div>
       <div className="policy">
+        <p>Which policy would you like {name} to be covered with?</p>
+        <p>How much would you like to insure {name}'s car for?</p>
+        <input className="insurance-amount" type="text" placeholder="Enter amount (up to $4,000)" />
+        <p>How much would you like {name}'s policy excess to be?</p>
+        <div className="excess-amounts">
+          {excessAmounts.map((amount: number, i: number) => 
+            <div key={i} className='excess-amount'>
+              <p>${amount}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )

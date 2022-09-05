@@ -1,5 +1,11 @@
 .driver-policy {
+  margin: 1rem 0;
   border-radius: 0.5rem;
+  border: 2px solid #004681;
+}
+
+.driver-policy:nth-of-type(2n) {
+  border: 2px solid #2376BD;
 }
 
 .driver-policy > .driver {
@@ -7,9 +13,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  margin: 1rem 0;
   font-size: 0.8em;
-  border-radius: inherit;
   background-color: #004681;
   color: white;
 }
@@ -21,4 +25,39 @@
 .driver-policy > .driver > img {
   height: 2.5rem;
   cursor: pointer;
+}
+
+.driver-policy > .policy {
+  padding: 0 1rem;
+}
+
+.driver-policy > .policy > p {
+  font-weight: bold;
+  color: #000000B5
+}
+
+.insurance-amount {
+  width: 12rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #F0F4FC;
+}
+
+.excess-amounts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.excess-amount {
+  border: 2px solid #1078CE;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.excess-amount > p {
+  margin: 0.5rem 2rem;
+  font-weight: bold;
+  color: #004681;
 }
