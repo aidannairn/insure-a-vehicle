@@ -1,0 +1,45 @@
+#insurance-container {
+  margin: 10rem 20% 2rem;
+}
+
+#form-step-options {
+  display: flex;
+  width: 100%;
+}
+
+#form-step-option {
+  width: 33%;
+  background-color: rgba(87, 163, 226, 0.5);
+  cursor: pointer;
+}
+
+#form-step-option.active {
+  background-color: #57A3E2;
+}
+
+#form-step-option.complete {
+  background-color: #004681;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-step-option.complete img {
+  max-height: 1.5rem;
+}
+
+#form-step-option:first-of-type {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#form-step-option:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#form-step-option h2 {
+  color: white;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1.25em;
+  text-transform: capitalize;
+}
