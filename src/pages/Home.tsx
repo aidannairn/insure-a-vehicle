@@ -10,6 +10,9 @@ import "../App.css";
 import { Box } from "@mui/system";
 import { DiscoverInsurance } from "../components/DiscoverInsurance/DiscoverInsurance";
 import { Footer } from "../components/Footer/Footer";
+import { FamilyPlan } from "../components/FamilyPlan/FamilyPlan";
+import { WhyTurners } from "../components/WhyTurners/WhyTurners";
+import { Question } from "../components/Question/Question";
 
 interface HomeProps {}
 
@@ -63,6 +66,9 @@ export const Home: React.FC<HomeProps> = ({}) => {
         </p>
       </div>
       <DiscoverInsurance alignment={alignment}/>
+      <FamilyPlan />
+      <WhyTurners />
+      <Question />
       <Footer />
     </div>
   );

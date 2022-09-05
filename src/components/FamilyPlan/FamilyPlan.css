@@ -1,0 +1,34 @@
+.family-plan-container {
+    background: #F5F5F5;
+}
+
+.family-plan-content {
+    height: 750px;
+}
+
+.family-plan-img img {
+    max-width: 1600px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.family-plan-img img {
+    max-width: 1600px;
+}
+
+img.home-img {
+    position: relative;
+    float: right;
+    width: 25%;
+    bottom: 8em;
+}
+
+.bottom-container {
+    text-align: center;
+}
+
+.text {
+    padding: 40px 0 20px 40px;
+}
