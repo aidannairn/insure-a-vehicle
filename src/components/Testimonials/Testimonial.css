@@ -19,6 +19,7 @@
     position: relative;
     right: 18em;
     top: 2em;
+    margin: 0 auto;
 }
 
 .testimonial-container .user-detail {
