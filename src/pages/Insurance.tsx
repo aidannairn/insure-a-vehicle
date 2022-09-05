@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import { Header } from '../components/Header/Header'
+import PoliciesAndExtras from '../components/PoliciesAndExtras/PoliciesAndExtras'
 import './insurance.css'
 
 interface StepInterface {
@@ -47,8 +48,8 @@ const Insurance: React.FC = () => {
       isComplete: isComplete.includes('cars')
     },
     {
-      name: 'polices & extras',
-      isActive: isActive === 'polices & extras',
+      name: 'policies & extras',
+      isActive: isActive === 'policies & extras',
       isComplete: isComplete.includes('policies & extras')
     }
   ]
@@ -62,6 +63,7 @@ const Insurance: React.FC = () => {
             return <FormStepOption key={i} step={step} setIsActive={setIsActive} />
           })}
         </div>
+        {isActive === 'policies & extras' && <PoliciesAndExtras />}
       </div>
     </>
   )
