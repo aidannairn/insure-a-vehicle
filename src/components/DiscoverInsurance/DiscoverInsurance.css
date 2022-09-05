@@ -86,6 +86,7 @@ table.insurance-table .first-row {
 
 .feature {
   padding: 10px;
+  font-weight: 700;
 }
 
 .up-arrow {
@@ -96,4 +97,72 @@ table.insurance-table .first-row {
 .down-arrow {
   position: relative;
   top: 10px;
+}
+
+.bottom-insurance {
+  text-align: center;
+}
+
+.get-quote-btn {
+  background: #1078CE;
+  border: none;
+  color: white;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+button.learn-more-btn {
+  background: transparent;
+  border: 1px solid #57A3E2;
+  color: #57A3E2;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.mechanical-insurance-content {
+  display: flex;
+  padding-top: 1em;
+}
+
+.photo {
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding-right: 1em;
+}
+
+img.mechanic {
+  width: 500px;
+}
+
+.mechanical-table {
+  border-collapse: collapse;
+  margin-left: 6em;
+  width: 90%;
+}
+
+.mechanical-table tr {
+  border-bottom: 1px solid #989898;
+}
+
+.mechanical-table tr:last-child {
+  border-bottom: none;
+}
+
+.mechanical-table th {
+  left: 0em;
+  position: relative;
+  text-align: left;
+  padding: 30px 0 30px 0;
 }
