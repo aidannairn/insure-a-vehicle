@@ -1,3 +1,3 @@
 # Turners Insurance App
 
-Demo: https://turnersinsurance.azurewebsites.net
+Live Version: https://turnersinsurance.azurewebsites.net
