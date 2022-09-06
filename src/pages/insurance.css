@@ -1,9 +1,10 @@
 #insurance-container {
-  margin: 10rem 20% 2rem;
+  margin: 10rem 13% 2rem;
 }
 
 #form-step-options {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
