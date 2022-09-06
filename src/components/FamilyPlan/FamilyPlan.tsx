@@ -1,6 +1,6 @@
 import React from "react";
 import familyPlanImg from "../../images/Quoting Process Steps.png";
-import familyPlanHomeImg from "../../images/family-plan-home.png";
+import familyPlanHomeImg from "../../images/family-plan-img.png";
 import "./FamilyPlan.css";
 
 interface FamilyPlanProps {}

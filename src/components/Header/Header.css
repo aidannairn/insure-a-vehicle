@@ -58,6 +58,12 @@ ul.right-menu {
   font-size: 18px;
 }
 
+.left-menu li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .account-panel {
   float: left;
   padding-right: 10px;

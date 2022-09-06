@@ -60,3 +60,16 @@
   height: 80px;
 }
 
+@media only screen and (max-width: 1025px) {
+  .homepage-btn-container button {
+    width: 300px;
+    font-size: 14px;
+    font-weight: 700;
+    height: 70px;
+}
+
+p.description {
+  font-size: 14px;
+}
+}
+
