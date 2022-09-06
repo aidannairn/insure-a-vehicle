@@ -2,19 +2,12 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import { Home } from "../src/pages/Home";
+import { DiscoverInsurance } from "./components/DiscoverInsurance/DiscoverInsurance";
 
 test("renders turners insurance page", () => {
-  render(<Home />);
-  const linkElement = screen.getByText(/Discover our insurances/i);
+  render(<DiscoverInsurance alignment={""} />);
+  const linkElement = screen.getByText(/Are you after car insurance?/i);
   expect(linkElement).toBeInTheDocument();
 });
 
-window.matchMedia =
-  window.matchMedia ||
-  function () {
-    return {
-      matches: false,
-      addListener: function () {},
-      removeListener: function () {},
-    };
-  };
+

@@ -1,8 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // core Swiper
+import 'swiper/css/navigation'; // Navigation module
+import 'swiper/css/pagination';
 import { Pagination, Navigation } from "swiper";
 import "./Testimonial.css";
 import testimonial1Img from "../../images/testimonial1.png";
