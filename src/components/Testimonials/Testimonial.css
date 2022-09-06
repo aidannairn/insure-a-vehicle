@@ -1,6 +1,6 @@
 .testimonial-container {
     text-align: center;
-    margin: 0 auto;
+    margin: 40px auto;
     max-height: 700px;
 }
 
@@ -24,4 +24,17 @@
 
 .testimonial-container .user-detail {
     font-size: 20px;
+}
+
+.swiper {
+    padding-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,14px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,14px));
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px;
 }
