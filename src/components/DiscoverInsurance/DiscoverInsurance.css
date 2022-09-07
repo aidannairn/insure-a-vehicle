@@ -174,7 +174,7 @@ table.insurance-table .first-row {
   font-weight: 700;
   height: 60px;
   width: 200px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 button.learn-more-btn {
@@ -186,7 +186,7 @@ button.learn-more-btn {
   font-weight: 700;
   height: 60px;
   width: 200px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-left: 10px;
 }
 
@@ -255,7 +255,7 @@ img.mechanic {
 }
 
 .bottom-insurance .other-plan {
-  padding-bottom: 20px;
+  padding: 40px;
 }
 
 .bottom-insurance img.mechanical-insurance-ico,
