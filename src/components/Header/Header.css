@@ -100,3 +100,94 @@ span.or {
 .person-icon {
   padding-right: 10px;
 }
+
+ul.dropdown {
+  display: none;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #F5F5F5;
+  min-width: 160px;
+  padding: 0;
+  z-index: 1;
+}
+
+.dropdown.show {
+  display: flex;
+  flex-flow: column;
+  border-radius: 10px 0 0 10px;
+  top: 53px;
+}
+
+.dropdown .menu-items a {
+  color: #004681;
+}
+
+ul.dropdown.dropdown-submenu.show {
+  position: absolute;
+  left: 345px;
+  width: 100%;
+  top: 0px;
+  background-color: #A7C3DA;
+}
+
+.dropdown.dropdown-submenu a{
+  color: #FFFFFF;
+}
+
+.dropdown.show .menu-items {
+  border-bottom: 1px solid white;
+  width: 320px;
+  height: 50px;
+  text-align: left;
+  line-height: 3;
+  padding-left: 25px;
+}
+
+.dropdown.show {
+  display: flex;
+  flex-flow: column;
+  border-radius: 10px 0 0 10px;
+}
+
+.dropdown.dropdown-submenu {
+  border-radius: 0 10px 10px 0;
+}
+
+.dropdown.show .menu-items:hover {
+  background-color: #004681;
+}
+
+.dropdown.show .menu-items:last-child {
+  border-bottom: none;
+}
+
+.dropdown.show .menu-items:hover:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.dropdown.show .menu-items:hover:last-child {
+  border-radius: 0 0 0 10px;
+}
+
+.dropdown.show .menu-items:hover a{
+  color: #FFFFFF;
+}
+
+ul.dropdown.dropdown-submenu.show .menu-items:hover {
+  background-color: #57A3E2;
+}
+
+ul.dropdown.dropdown-submenu.show .menu-items:hover:first-child {
+border-radius: 0 10px 0 0;
+}
+
+ul.dropdown.dropdown-submenu.show .menu-items:hover:last-child {
+  border-radius: 0 0 10px 0;
+  }

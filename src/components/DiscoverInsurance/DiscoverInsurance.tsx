@@ -23,16 +23,17 @@ export const DiscoverInsurance: React.FC<DiscoverInsuranceProps> = ({
         <div className="bottom-insurance">
           <button className="get-quote-btn">Get a Quote / Buy</button>
           <div className="other-plan">
-            <img src={towTruckIco} />
-            Do you want to get mechanical coverage?{" "}
+            <img src={towTruckIco} className="mechanical-insurance-ico" />
+            <span>Do you want to get mechanical coverage?</span>{" "}
             <a>Check our Mechanical Breakdown Insurance</a> plan.
           </div>
         </div>
       ) : (
         <div className="bottom-insurance">
           <div className="other-plan">
-            <img src={vehInsuranceIco} />
-            Are you after car insurance? <a>Check our Car Insurance</a> plan.
+            <img src={vehInsuranceIco} className="vehical-insurance-ico" />
+            <span>Are you after car insurance?</span>{" "}
+            <a>Check our Car Insurance</a> plan.
           </div>
         </div>
       )}
