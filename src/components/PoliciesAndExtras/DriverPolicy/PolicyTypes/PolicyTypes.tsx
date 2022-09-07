@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import PolicyType from './PolicyType/PolicyType'
 import policyTypesData from './policy-types-data'
 import './policy-types.css'
 
@@ -40,6 +41,7 @@ const PolicyTypes: React.FC = () => {
         ))}
       </div>
       <div className='pt-bg-accent' style={{ backgroundColor: getAccentCol() }} />
+      <PolicyType policyType={policyType} />
     </div>
   )
 }
