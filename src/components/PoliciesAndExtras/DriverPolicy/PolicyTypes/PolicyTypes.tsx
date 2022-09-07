@@ -30,11 +30,13 @@ const PolicyTypes: React.FC = () => {
     }
   }
 
+  const handlePolicyOptionClick = (i: number) => setPolicyType(policyTypes[i])
+
   return (
     <div className="policy-types">
       <div className="policy-type-options">
         {policyTypes.map((pt: PolicyTypesInterface, i: number) => (
-          <div key={i} className="policy-type-option" style={{ backgroundColor: pt.bgCol }}>
+          <div key={i} className="policy-type-option" style={{ backgroundColor: pt.bgCol }} onClick={() => handlePolicyOptionClick(i)}>
             <img src={pt.icon} alt={`${pt.type} icon`} />
             <p>{pt.type}</p>
           </div>
