@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+.driver-policy > .driver > img.collapsed {
+  transform: rotate(180deg);
+}
+
 .driver-policy > .policy {
   padding: 0 1rem;
 }
