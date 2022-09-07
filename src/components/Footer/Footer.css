@@ -101,7 +101,7 @@
     font-size: 14px;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1600px) {
 .footer-menu h3 {
     margin: 0;
     font-size: 16px;
