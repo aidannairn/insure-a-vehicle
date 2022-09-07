@@ -32,3 +32,22 @@ img.home-img {
 .text {
     padding: 40px 0 20px 40px;
 }
+
+@media only screen and (max-width: 1025px) {
+    .family-plan-img img {
+        width: 100%;
+        max-width: 1024px;
+      }
+    
+      .family-plan-content h1 {
+        font-size: 20px;
+      }
+    
+      .family-plan-content p {
+        font-size: 14px;
+      }
+    
+      .family-plan-content {
+        height: 580px;
+    }
+}

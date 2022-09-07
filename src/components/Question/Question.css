@@ -16,3 +16,18 @@
 .question-container .contact-us {
     padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 1025px) {
+    .question-text h1 {
+        font-size: 20px;
+      }
+      
+      .question-text p {
+        font-size: 14px;
+      }
+      
+      .question-container .contact-us img {
+        width: 36px;
+        padding: 10px;
+      }
+}
