@@ -52,8 +52,8 @@ export const Home: React.FC<HomeProps> = ({}) => {
           aria-label="header-menu"
           className="homepage-btn-container"
         >
-          <ToggleButton value="left" className='left-btn'>Car Insurance</ToggleButton>
-          <ToggleButton value="right" className='right-btn'>
+          <ToggleButton value="left" className='left-btn' sx={{ textTransform: 'capitalize', m: 0 }}>Car Insurance</ToggleButton>
+          <ToggleButton value="right" className='right-btn' sx={{ textTransform: 'capitalize', m: 0 }}>
             Mechanical Breakdown Insurance
           </ToggleButton>
         </ToggleButtonGroup>

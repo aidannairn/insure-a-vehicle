@@ -269,3 +269,131 @@ img.mechanic {
 .bottom-insurance .other-plan span {
   font-weight: 700;
 }
+
+@media only screen and (max-width: 1025px) {
+  .list-content li {
+    border-radius: 15px;
+    height: 310px;
+    left: 0;
+    top: 0;
+    width: 200px;
+  }
+
+  .list-content img {
+    width: 200px;
+  }
+
+  .list-content p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .item1:hover p,
+  .item2:hover p,
+  .item3:hover p {
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+  }
+
+  button.learn-more-btn,
+  .item3:hover button.learn-more-btn {
+    margin-top: 100px;
+    margin-left: 30px;
+    height: 50px;
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .item2:hover p {
+    margin-top: 46px;
+  }
+
+  .item3:hover p {
+    margin-top: 76px;
+  }
+
+  .item1:hover button.learn-more-btn,
+  .item2:hover button.learn-more-btn,
+  .item3:hover button.learn-more-btn {
+    margin-top: 100px;
+    margin-left: 32px;
+  }
+
+  .car-insurance .policy a {
+    font-size: 14px;
+  }
+
+  table.insurance-table th {
+    text-align: left;
+    padding-left: 1em;
+    font-size: 12px;
+  }
+
+  table.insurance-table img {
+    width: 54px;
+  }
+
+  table.insurance-table .first-row {
+    padding-left: 4em;
+    padding-right: 13.5em;
+  }
+
+  table.insurance-table .second-row {
+    padding-left: 0em;
+    padding-right: 8em;
+  }
+
+  table.insurance-table .third-row {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .car-insurance .policy {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3.5em;
+    grid-gap: 9em;
+  }
+
+  .car-insurance .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 5.5em;
+    margin-right: 3em;
+  }
+
+  a.features {
+    font-size: 14px;
+  }
+
+  .arrow-ico {
+    width: 24px;
+  }
+
+  .get-quote-btn {
+    background: #1078ce;
+    border: none;
+    color: white;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+  }
+
+  .bottom-insurance .other-plan {
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .bottom-insurance img.mechanical-insurance-ico,
+  .bottom-insurance img.vehical-insurance-ico {
+    width: 36px;
+    position: relative;
+    top: 10px;
+    padding-right: 10px;
+  }
+}

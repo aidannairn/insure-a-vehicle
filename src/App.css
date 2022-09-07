@@ -62,10 +62,10 @@
 
 @media only screen and (max-width: 1025px) {
   .homepage-btn-container button {
-    width: 300px;
+    width: 280px;
     font-size: 14px;
     font-weight: 700;
-    height: 70px;
+    height: 60px;
 }
 
 p.description {
