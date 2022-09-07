@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import PolicyTypes from './PolicyTypes/PolicyTypes'
 import './driver-policy.css'
+import MechanicalBreakdown from './MechanicalBreakdown/MechanicalBreakdown'
 
 interface DriverPolicyProps {
   name: string
@@ -34,6 +35,7 @@ const DriverPolicy: React.FC<DriverPolicyProps> = ({ name }) => {
               </div>
             )}
           </div>
+          <MechanicalBreakdown />
         </div>
       }
     </div>
