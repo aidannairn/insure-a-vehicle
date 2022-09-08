@@ -34,7 +34,7 @@ const FormStepOption: React.FC<StepOptionProps> = ({ step, setIsActive }) => {
 
 const Insurance: React.FC = () => {
   const [isActive, setIsActive] = useState<string>('policies & extras')
-  const [isComplete, setIsComplete] = useState<string[]>([])
+  const [isComplete, setIsComplete] = useState<string[]>(['drivers', 'cars'])
 
   const steps: StepInterface[] = [
     {
@@ -56,7 +56,7 @@ const Insurance: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <Header isInsurance />
       <div id='insurance-container'>
         <div id="form-step-options">
           {steps.map((step: StepInterface, i: number) => {

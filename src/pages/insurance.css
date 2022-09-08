@@ -1,5 +1,5 @@
 #insurance-container {
-  margin: 10rem 13% 2rem;
+  margin: 6rem 13% 2rem;
 }
 
 #form-step-options {
@@ -8,6 +8,7 @@
   justify-content: center;
   width: 101%;
   margin-left: -0.35rem;
+  margin-bottom: 2rem;
 }
 
 #form-step-option {
