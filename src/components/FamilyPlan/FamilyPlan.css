@@ -16,6 +16,7 @@
 
 .family-plan-img img {
     max-width: 1600px;
+    width: 100%;
 }
 
 img.home-img {
@@ -31,4 +32,15 @@ img.home-img {
 
 .text {
     padding: 40px 0 20px 40px;
+}
+
+@media only screen and (max-width: 1600px) {
+    
+      .family-plan-content {
+        height: 712px;
+    }
+
+    img.home-img {
+        bottom: 8.5em;
+    }
 }

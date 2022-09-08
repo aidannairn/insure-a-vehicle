@@ -16,3 +16,11 @@
 .question-container .contact-us {
     padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 1600px) {
+      
+      .question-container .contact-us img {
+        width: 36px;
+        padding: 10px;
+      }
+}

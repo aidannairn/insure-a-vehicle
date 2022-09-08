@@ -34,7 +34,7 @@ const FormStepOption: React.FC<StepOptionProps> = ({ step, setIsActive }) => {
   )
 }
 
-const Insurance: React.FC = (test2) => {
+const Insurance: React.FC = () => {
   const [isActive, setIsActive] = useState<string>('drivers')
   const [isComplete, setIsComplete] = useState<string[]>([])
 

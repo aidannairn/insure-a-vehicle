@@ -35,7 +35,71 @@ li.item3 {
 }
 
 .list-content img {
-  width: 330px;
+  width: 100%;
+}
+
+.item1 .plan-description,
+.item2 .plan-description,
+.item3 .plan-description {
+  display: none;
+}
+
+.item1 .btn-container,
+.item2 .btn-container,
+.item3 .btn-container {
+  display: none !important;
+}
+
+.item1:hover .btn-container,
+.item2:hover .btn-container,
+.item3:hover .btn-container {
+  display: block !important;
+}
+
+.list-content button.learn-more-btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.item1:hover button.learn-more-btn,
+.item2:hover button.learn-more-btn,
+.item3:hover button.learn-more-btn {
+  margin-top: 140px;
+  margin-left: 65px;
+}
+
+.item1:hover .plan-title,
+.item2:hover .plan-title,
+.item3:hover .plan-title {
+  display: none;
+}
+
+.item1:hover .plan-description,
+.item2:hover .plan-description,
+.item3:hover .plan-description {
+  display: block;
+}
+
+.item1:hover p,
+.item2:hover p,
+.item3:hover p {
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+}
+
+.item2:hover p {
+  margin-top: 60px;
+}
+
+.item3:hover p {
+  margin-top: 100px;
+}
+
+.item1:hover img,
+.item2:hover img,
+.item3:hover img {
+  display: none;
 }
 
 .list-content span {
@@ -68,8 +132,7 @@ table.insurance-table th {
   padding-left: 2em;
 }
 
-table.insurance-table .second-row
- {
+table.insurance-table .second-row {
   padding-left: 0em;
   padding-right: 8em;
 }
@@ -103,7 +166,7 @@ table.insurance-table .first-row {
 }
 
 .get-quote-btn {
-  background: #1078CE;
+  background: #1078ce;
   border: none;
   color: white;
   margin-top: 50px;
@@ -111,19 +174,19 @@ table.insurance-table .first-row {
   font-weight: 700;
   height: 60px;
   width: 200px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 button.learn-more-btn {
   background: transparent;
-  border: 1px solid #57A3E2;
-  color: #57A3E2;
+  border: 1px solid #57a3e2;
+  color: #57a3e2;
   margin-top: 50px;
   font-size: 15px;
   font-weight: 700;
   height: 60px;
   width: 200px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-left: 10px;
 }
 
@@ -192,10 +255,83 @@ img.mechanic {
 }
 
 .bottom-insurance .other-plan {
-  padding-bottom: 20px;
+  padding: 40px;
 }
 
-.bottom-insurance .other-plan img {
+.bottom-insurance img.mechanical-insurance-ico,
+.bottom-insurance img.vehical-insurance-ico {
+  width: 40px;
   position: relative;
-  top: 16px;
+  top: 10px;
+  padding-right: 10px;
+}
+
+.bottom-insurance .other-plan span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1600px) {
+
+  .item1:hover button.learn-more-btn, .item2:hover button.learn-more-btn, .item3:hover button.learn-more-btn {
+    margin-top: 100px;
+    margin-left: 42px;
+  }
+
+  .list-content li {
+    height: 406px;
+    width: 280px;
+    left: 0px;
+    top: 0px;
+    border-radius: 15px;
+  }
+
+  .list-content img {
+    width: 100%;
+  }
+
+  table.insurance-table .first-row {
+    padding-left: 11.5em;
+    padding-right: 11.5em;
+}
+
+table.insurance-table .second-row {
+  padding-left: 6em;
+  padding-right: 6.5em;
+}
+
+table.insurance-table .third-row {
+  padding-left: 11.5em;
+  padding-right: 6.5em;
+}
+
+  .item1:hover p,
+  .item2:hover p,
+  .item3:hover p {
+    font-weight: 300;
+    color: white;
+  }
+
+  table.insurance-table th {
+    text-align: left;
+    padding-left: 1em;
+  }
+
+  table.insurance-table img {
+    width: 64px;
+  }
+
+  .car-insurance .policy {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4.5em;
+    grid-gap: 13.5em;
+  }
+
+  .car-insurance .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 8.75em;
+    margin-right: 3em;
+  }
+
 }

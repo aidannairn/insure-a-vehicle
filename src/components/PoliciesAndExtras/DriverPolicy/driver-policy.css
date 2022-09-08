@@ -1,0 +1,85 @@
+.driver-policy {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: 2px solid #004681;
+}
+
+.driver-policy:nth-of-type(2n) {
+  border: 2px solid #2376BD;
+}
+
+.driver-policy > .driver {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.6em;
+  background-color: #004681;
+  color: white;
+}
+
+.driver-policy:nth-of-type(2n) > .driver {
+  background-color: #2376BD;
+}
+
+.driver-policy > .driver > img {
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.driver-policy > .driver > img.collapsed {
+  transform: rotate(180deg);
+}
+
+.driver-policy > .policy {
+  padding: 0 2rem 1rem;
+}
+
+.driver-policy > .policy > p {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #000000B5
+}
+
+.driver-policy > .policy > p:first-of-type {
+  margin-top: 2rem;
+}
+
+.insurance-amount {
+  display: flex;
+}
+
+.insurance-amount > p {
+  font-weight: bold;
+  color: #000000B5;
+}
+
+.insurance-amount > input {
+  width: 6rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #F0F4FC;
+}
+
+.excess-amounts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.excess-amount {
+  width: 8rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  border: 2px solid #1078CE;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.excess-amount > p {
+  margin: 0.5rem 2rem;
+  font-weight: bold;
+  color: #004681;
+}

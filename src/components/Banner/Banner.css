@@ -17,6 +17,71 @@
 .btn-box button {
     font-weight: 600;
     height: 60px;
+    border-radius: 5px;
     font-size: 15px;
     font-family: "Open Sans", sans-serif;
 }
+
+@media only screen and (min-width: 1601px) {
+    .text-box {
+        bottom: 48em;
+        float: left;
+        padding-left: 80px;
+        position: absolute;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .text-box {
+        bottom: 20em;
+        float: left;
+        padding-left: 60px;
+        position: absolute;
+        text-align: left;
+    }
+
+    .btn-box button {
+        font-weight: 600;
+        height: 52px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .right-menu li, .left-menu li {
+        float: left;
+        padding-left: 10px;
+        font-weight: 600;
+    }
+
+    ul.right-menu {
+        float: right;
+        color: white;
+        padding-right: 30px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 25px;
+        top: 12px;
+        color: white;
+    }
+
+    .heading-text {
+        padding: 30px;
+        color: #004681;
+    }
+
+    .left-arrow {
+        max-height: 36px;
+        transform: rotate(210deg);
+        position: relative;
+        top: 24px;
+    }
+
+    .right-arrow {
+        max-height: 36px;
+        transform: rotateX(180deg) rotate(30deg);
+        position: relative;
+        top: 24px;
+    }
+  }
