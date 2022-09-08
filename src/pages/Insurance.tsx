@@ -3,6 +3,8 @@ import InsuranceFooter from '../components/Footer/InsuranceFooter/InsuranceFoote
 
 import { Header } from '../components/Header/Header'
 import PoliciesAndExtras from '../components/PoliciesAndExtras/PoliciesAndExtras'
+import DriversQuote from '../components/DriversQuote/DriversQuote'
+import CarsQuote from '../components/CarsQuote/CarsQuote'
 import './insurance.css'
 
 interface StepInterface {
@@ -65,10 +67,13 @@ const Insurance: React.FC = () => {
           })}
         </div>
         {isActive === 'policies & extras' && <PoliciesAndExtras />}
+        {isActive === 'cars' && <CarsQuote />}
+        {isActive === 'drivers' && <DriversQuote />}
       </div>
       <InsuranceFooter />
     </>
   )
 }
+
 
 export default Insurance
