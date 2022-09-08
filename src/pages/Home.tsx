@@ -2,14 +2,16 @@ import React from "react";
 import { Banner } from "../components/Banner/Banner";
 import { Header } from "../components/Header/Header";
 import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import arrowImg from "../images/arrow.png";
 import "../App.css";
-import { Box } from "@mui/system";
 import { DiscoverInsurance } from "../components/DiscoverInsurance/DiscoverInsurance";
 import { Footer } from "../components/Footer/Footer";
+import { FamilyPlan } from "../components/FamilyPlan/FamilyPlan";
+import { WhyTurners } from "../components/WhyTurners/WhyTurners";
+import { Question } from "../components/Question/Question";
+import { Testimonials } from "../components/Testimonials/Testimonials";
 
 interface HomeProps {}
 
@@ -48,8 +50,8 @@ export const Home: React.FC<HomeProps> = ({}) => {
           aria-label="header-menu"
           className="homepage-btn-container"
         >
-          <ToggleButton value="left" className='left-btn'>Car Insurance</ToggleButton>
-          <ToggleButton value="right" className='right-btn'>
+          <ToggleButton value="left" className='left-btn' sx={{ textTransform: 'capitalize', m: 0 }}>Car Insurance</ToggleButton>
+          <ToggleButton value="right" className='right-btn' sx={{ textTransform: 'capitalize', m: 0 }}>
             Mechanical Breakdown Insurance
           </ToggleButton>
         </ToggleButtonGroup>
@@ -63,6 +65,10 @@ export const Home: React.FC<HomeProps> = ({}) => {
         </p>
       </div>
       <DiscoverInsurance alignment={alignment}/>
+      <FamilyPlan />
+      <WhyTurners />
+      <Question />
+      <Testimonials />
       <Footer />
     </div>
   );

@@ -1,0 +1,26 @@
+.question-container {
+    background: #004681;
+    text-align: center;
+}
+
+.question-text {
+    color: white;
+    padding-top: 20px;
+}
+
+.question-container .contact-us img {
+    width: 50px;
+    padding: 10px;
+}
+
+.question-container .contact-us {
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1600px) {
+      
+      .question-container .contact-us img {
+        width: 36px;
+        padding: 10px;
+      }
+}

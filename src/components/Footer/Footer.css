@@ -5,6 +5,7 @@
 .footer-content {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .footer-menu{
@@ -60,21 +61,26 @@
 }
 
 .sign-up {
-    padding-left: 50px;
+    padding-left: 210px;
 }
 
 .footer-input {
     width: 300px;
-    height: 44px;
+    height: 60px;
     border: none;
-    border-radius: 10px;
+    font-size: 16px;
+    border-radius: 5px;
     margin-right: 10px;
 }
 
+input.footer-input::placeholder {
+    padding-left: 20px;
+}
+
 .footer-btn {
-    width: 100px;
-    height: 46px;
-    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
     border: none;
     background: #1078CE;
     color: #FFFFFF;
@@ -98,4 +104,27 @@
     text-align: center;
     padding-bottom: 10px;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 1600px) {
+.footer-menu h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-menu ul li a {
+    font-size: 14px;
+}
+
+.social-media h2, .contact-us h2, .sign-up h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
 }

@@ -24,8 +24,8 @@ export const Banner: React.FC<BannerProps> = ({}) => {
             Rerum, iure?
           </p>
           <Stack spacing={2} direction="row" className="btn-box">
-            <Button variant="contained" size="medium">Get an Instant Quote Online</Button>
-            <Button variant="outlined" size="large">Retrieve your Quote</Button>
+            <Button variant="contained" size="medium" sx={{ textTransform: 'capitalize', m: 0 }}>Get an Instant Quote Online</Button>
+            <Button variant="outlined" size="large" sx={{ textTransform: 'capitalize', m: 0 }}>Retrieve your Quote</Button>
           </Stack>
         </div>
         <img src={bannerImg} className="banner-img" />

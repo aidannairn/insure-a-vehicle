@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.64">
+  <testsuite name="src/App.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-09-08T03:53:31" time="0.319" tests="1">
+    <testcase classname=" renders turners insurance page" name=" renders turners insurance page" time="0.021">
+    </testcase>
+  </testsuite>
+</testsuites>
