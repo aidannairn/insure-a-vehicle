@@ -17,31 +17,33 @@
 .btn-box button {
     font-weight: 600;
     height: 60px;
+    border-radius: 5px;
     font-size: 15px;
     font-family: "Open Sans", sans-serif;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (min-width: 1601px) {
     .text-box {
-        bottom: 47em;
+        bottom: 48em;
+        float: left;
+        padding-left: 80px;
+        position: absolute;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .text-box {
+        bottom: 20em;
         float: left;
         padding-left: 60px;
         position: absolute;
         text-align: left;
     }
 
-    .text-box h1{
-        font-size: 24px;
-    }    
-
-    .text-box p {
-        font-size: 14px;
-    }
-
     .btn-box button {
         font-weight: 600;
         height: 52px;
-        font-size: 12px;
         font-family: "Open Sans", sans-serif;
     }
 
@@ -49,7 +51,6 @@
         float: left;
         padding-left: 10px;
         font-weight: 600;
-        font-size: 15px;
     }
 
     ul.right-menu {
@@ -68,7 +69,6 @@
     .heading-text {
         padding: 30px;
         color: #004681;
-        font-size: 24px;
     }
 
     .left-arrow {

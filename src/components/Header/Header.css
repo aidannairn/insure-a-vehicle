@@ -53,7 +53,7 @@ ul.right-menu {
 .right-menu li,
 .left-menu li {
   float: left;
-  padding-left: 10px;
+  padding-left: 15px;
   font-weight: 600;
   font-size: 18px;
 }
@@ -99,6 +99,10 @@ span.or {
 
 .person-icon {
   padding-right: 10px;
+}
+
+.homepage-header p.description {
+  margin: 40px;
 }
 
 ul.dropdown {
