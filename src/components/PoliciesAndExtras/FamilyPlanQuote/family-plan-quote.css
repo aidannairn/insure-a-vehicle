@@ -5,14 +5,14 @@
 }
 
 #family-plan-quote > #header {
-  font-size: 0.8em;
+  font-size: 0.6em;
   background-color: #5E9ED3;
   color: white;
 }
 
 #family-plan-quote > #header > h1 {
   margin: 0;
-  padding: 1rem;
+  padding: 1.3rem;
 }
 
 #family-policies {
@@ -21,7 +21,7 @@
 }
 
 #payment-plans {
-  margin: 1rem;
+  margin: 2rem;
   background-color: #F0F4FC;
   border-radius: 0.5rem;
 }
@@ -78,7 +78,7 @@
 #payment-plans > p:last-of-type {
   text-align: center;
   background-color: #57A3E2;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   color: white;
   font-weight: bold;
   border-radius: 0 0 0.5rem 0.5rem;

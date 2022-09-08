@@ -28,11 +28,12 @@ const MechanicalBreakdown: React.FC = () => {
 
   return (
     <div className="mechanical-breakdown">
-      <p>Want to be fully insured? Add out Mechanical Breakdown Insurance to your can insurance plan.</p>
+      <p>Want to be fully insured? </p>
+      <p>Add out Mechanical Breakdown Insurance to your can insurance plan.</p>
       <div className="mb-benefits">
         {
           mbBenefits.map((benefit: MbBenefit, i: number) => (
-            <div className='mb-benefit'>
+            <div key={i} className='mb-benefit'>
               <div className="mb-circle">
                 <img src={benefit.icon} alt={benefit.icon} />
               </div>

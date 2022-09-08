@@ -12,6 +12,7 @@ const PolicyTypes: React.FC = () => {
     quarterlyRate: number
     annualRate: number
     famPlanDiscount?: boolean
+    mostPopular?: boolean
     cover: string
     bgCol: string
   }
@@ -44,6 +45,9 @@ const PolicyTypes: React.FC = () => {
       </div>
       <div className='pt-bg-accent' style={{ backgroundColor: getAccentCol() }} />
       <PolicyType policyType={policyType} />
+      <div className='check-policy'>
+        <a className="check-policy" href="#">Check Policy</a>
+      </div>
     </div>
   )
 }

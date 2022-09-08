@@ -6,6 +6,7 @@ const policyTypesData = [
     quarterlyRate: 110,
     annualRate: 405,
     famPlanDiscount: true,
+    mostPopular: true,
     cover: 'Covers you for accidents, theft, fire, vandalism and storm damage.',
     bgCol: '#1078CE'
   },
@@ -15,6 +16,7 @@ const policyTypesData = [
     monthlyRate: 28,
     quarterlyRate: 90,
     annualRate: 315,
+    famPlanDiscount: true,
     cover: 'Covers you for vandalism and storm damage.',
     bgCol: '#57A3E2'
   },
@@ -24,6 +26,7 @@ const policyTypesData = [
     monthlyRate: 25,
     quarterlyRate: 80,
     annualRate: 280,
+    famPlanDiscount: true,
     cover: 'Covers you for theft and fire damage.',
     bgCol: '#A7C3DA'
   },
@@ -33,6 +36,7 @@ const policyTypesData = [
     monthlyRate: 19,
     quarterlyRate: 60,
     annualRate: 210,
+    famPlanDiscount: true,
     cover: 'Covers you for mechanical breakdowns.',
     bgCol: '#A5BBCE'
   },

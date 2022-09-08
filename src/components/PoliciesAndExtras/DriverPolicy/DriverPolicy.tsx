@@ -25,8 +25,10 @@ const DriverPolicy: React.FC<DriverPolicyProps> = ({ name }) => {
         <div className="policy">
           <p>Which policy would you like {name} to be covered with?</p>
           <PolicyTypes />
-          <p>How much would you like to insure {name}'s car for?</p>
-          <input className="insurance-amount" type="text" placeholder="Enter amount (up to $4,000)" />
+          <div className="insurance-amount">
+            <p>How much would you like to insure {name}'s car for?</p>
+            <input type="number" placeholder="(max $4,000)" />
+          </div>
           <p>How much would you like {name}'s policy excess to be?</p>
           <div className="excess-amounts">
             {excessAmounts.map((amount: number, i: number) => 

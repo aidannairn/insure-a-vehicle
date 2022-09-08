@@ -1,0 +1,47 @@
+#send-quote-container {
+  padding: 1rem;
+  color: #A7C3DA;
+  border-radius: 0.5rem;
+  border: 2px solid #A7C3DA;
+}
+
+#quote-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-desc > img {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+#quote-desc > p {
+  font-weight: bold;
+}
+
+#quote-inputs {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+#quote-inputs > input {
+  width: 15rem;
+  background-color: #57A3E21A;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem
+}
+
+#send-quote-btn {
+  text-align: center;
+  width: 6rem;
+  background-color: #A7C3DA;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  padding: 0 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

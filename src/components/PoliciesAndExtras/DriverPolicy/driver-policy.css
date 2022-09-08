@@ -12,8 +12,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  font-size: 0.8em;
+  padding: 0.5rem 1rem;
+  font-size: 0.6em;
   background-color: #004681;
   color: white;
 }
@@ -32,17 +32,32 @@
 }
 
 .driver-policy > .policy {
-  padding: 0 1rem;
+  padding: 0 2rem 1rem;
 }
 
 .driver-policy > .policy > p {
+  margin-bottom: 2rem;
   font-weight: bold;
   color: #000000B5
 }
 
+.driver-policy > .policy > p:first-of-type {
+  margin-top: 2rem;
+}
+
 .insurance-amount {
-  width: 12rem;
-  padding: 0.5rem;
+  display: flex;
+}
+
+.insurance-amount > p {
+  font-weight: bold;
+  color: #000000B5;
+}
+
+.insurance-amount > input {
+  width: 6rem;
+  padding: 1rem;
+  margin-left: 1rem;
   border: none;
   border-radius: 0.5rem;
   background-color: #F0F4FC;

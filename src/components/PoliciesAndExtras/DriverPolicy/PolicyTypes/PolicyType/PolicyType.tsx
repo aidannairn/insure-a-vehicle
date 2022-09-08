@@ -7,6 +7,7 @@ interface PolicyTypesInterface {
   quarterlyRate: number
   annualRate: number
   famPlanDiscount?: boolean
+  mostPopular?: boolean
   cover: string
   bgCol: string
 }
@@ -22,11 +23,13 @@ const PolicyType: React.FC<Props> = ({ policyType }) => {
     quarterlyRate,
     annualRate,
     famPlanDiscount,
+    mostPopular,
     cover
   } = policyType
 
   return (
     <div className="policy-type">
+      {mostPopular && <img src='images/most-popular.png' alt='Most popular banner'/>}
       <h1>{type}</h1>
       <div className="horizontal-rule"></div>
       <p className="monthly-rate">

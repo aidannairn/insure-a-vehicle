@@ -1,6 +1,8 @@
 import DriverPolicy from "./DriverPolicy/DriverPolicy"
 import FamilyPlanQuote from "./FamilyPlanQuote/FamilyPlanQuote"
 
+import './policies-and-extras.css'
+
 interface Props {
 
 }
@@ -67,6 +69,16 @@ const PoliciesAndExtras: React.FC<Props> = () => {
         ))
       }
       <FamilyPlanQuote familyDetails={familyDetails} />
+      <div id="send-quote-container">
+        <div id="quote-desc">
+          <img src="/images/mail-icon.png" alt="Envelope" />
+          <p>Want a personal copy? Enter your email address and we will send you your quote (optional)</p>
+        </div>
+        <div id="quote-inputs">
+          <input type="text" placeholder="Enter your email address" />
+          <div id="send-quote-btn"><p>Send quote</p></div>
+        </div>
+      </div>
     </div>
   )
 }

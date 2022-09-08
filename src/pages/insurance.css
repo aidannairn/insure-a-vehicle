@@ -4,12 +4,18 @@
 
 #form-step-options {
   display: flex;
+  height: 4rem;
   justify-content: center;
-  width: 100%;
+  width: 101%;
+  margin-left: -0.35rem;
 }
 
 #form-step-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 33%;
+  font-size: 1.25em;
   background-color: rgba(87, 163, 226, 0.5);
   cursor: pointer;
 }
