@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import InsuranceFooter from '../components/Footer/InsuranceFooter/InsuranceFooter'
 
 import { Header } from '../components/Header/Header'
 import PoliciesAndExtras from '../components/PoliciesAndExtras/PoliciesAndExtras'
@@ -33,8 +34,8 @@ const FormStepOption: React.FC<StepOptionProps> = ({ step, setIsActive }) => {
 }
 
 const Insurance: React.FC = () => {
-  const [isActive, setIsActive] = useState<string>('policies & extras')
-  const [isComplete, setIsComplete] = useState<string[]>(['drivers', 'cars'])
+  const [isActive, setIsActive] = useState<string>('drivers')
+  const [isComplete, setIsComplete] = useState<string[]>([])
 
   const steps: StepInterface[] = [
     {
@@ -65,6 +66,7 @@ const Insurance: React.FC = () => {
         </div>
         {isActive === 'policies & extras' && <PoliciesAndExtras />}
       </div>
+      <InsuranceFooter />
     </>
   )
 }
