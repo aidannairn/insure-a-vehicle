@@ -24,7 +24,7 @@ const PolicyTypes: React.FC = () => {
     switch (policyType.type) {
       case 'comprehensive everyday plus': return '#1078CE'
       case 'third party property damage': return '#57A3E2'
-      case 'third party fire and theft': return '#A7C3DA'
+      case 'third party fire & theft': return '#A7C3DA'
       case 'mechanical breakdown': return '#A5BBCE'
       default: return '#1078CE'
     }

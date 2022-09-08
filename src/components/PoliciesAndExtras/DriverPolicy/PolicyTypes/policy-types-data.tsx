@@ -20,7 +20,7 @@ const policyTypesData = [
   },
   {
     icon: '/images/fire-and-theft-icon.png',
-    type: 'third party fire and theft',
+    type: 'third party fire & theft',
     monthlyRate: 37,
     quarterlyRate: 110,
     annualRate: 405,

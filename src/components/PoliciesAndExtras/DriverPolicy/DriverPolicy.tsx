@@ -9,7 +9,7 @@ interface DriverPolicyProps {
 }
 
 const DriverPolicy: React.FC<DriverPolicyProps> = ({ name }) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(true)
+  const [isExpanded, setIsExpanded] = useState<boolean>(false)
 
   const handleArrowClick = () => setIsExpanded(!isExpanded)
 
