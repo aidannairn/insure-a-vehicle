@@ -1,0 +1,86 @@
+#family-plan-quote {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: 2px solid #5E9ED3;
+}
+
+#family-plan-quote > #header {
+  font-size: 0.6em;
+  background-color: #5E9ED3;
+  color: white;
+}
+
+#family-plan-quote > #header > h1 {
+  margin: 0;
+  padding: 1.3rem;
+}
+
+#family-policies {
+  display: flex;
+  justify-content: space-around;
+}
+
+#payment-plans {
+  margin: 2rem;
+  background-color: #F0F4FC;
+  border-radius: 0.5rem;
+}
+
+#payment-plans > .header {
+  background-color: #004681;
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem 0;
+}
+
+#payment-plans > .header > p {
+  margin: 0
+}
+
+#payment-plans > .header > p:first-of-type {
+  font-weight: bold;
+}
+
+.driver-policy-plan {
+  padding: 0 3rem;
+}
+
+.name-and-rate, .payment-plan-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.name-and-rate > p {
+  margin: 1rem 0 0.25rem;
+}
+
+.name-and-rate > p:last-of-type {
+  color: #565656;
+}
+
+.driver-policy-plan > p {
+  margin-top: 0;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #004681;
+}
+
+.payment-plan-total {
+  margin: 2rem 3rem 0;
+}
+
+.payment-plan-total > p:last-of-type {
+  color: #565656;
+}
+
+#payment-plans > p:last-of-type {
+  text-align: center;
+  background-color: #57A3E2;
+  padding: 1rem 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+

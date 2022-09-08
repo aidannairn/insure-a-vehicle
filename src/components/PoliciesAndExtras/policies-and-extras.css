@@ -1,0 +1,68 @@
+#send-quote-container {
+  padding: 1rem;
+  color: #A7C3DA;
+  border-radius: 0.5rem;
+  border: 2px solid #A7C3DA;
+}
+
+#quote-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-desc > img {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+#quote-desc > p {
+  font-weight: bold;
+}
+
+#quote-inputs {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+#quote-inputs > input {
+  width: 15rem;
+  background-color: #57A3E21A;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem
+}
+
+#send-quote-btn {
+  text-align: center;
+  width: 6rem;
+  background-color: #A7C3DA;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  padding: 0 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#insurance-nav-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.insurance-nav-btn {
+  width: 16rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: 2px solid #004681;
+  text-align: center;
+  color: #004681;
+  cursor: pointer;
+}
+
+.insurance-nav-btn.solid {
+  background-color: #004681;
+  color: white;
+}
