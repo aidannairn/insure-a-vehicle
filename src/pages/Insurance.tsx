@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import InsuranceFooter from '../components/Footer/InsuranceFooter/InsuranceFooter'
 
 import { Header } from '../components/Header/Header'
 import PoliciesAndExtras from '../components/PoliciesAndExtras/PoliciesAndExtras'
@@ -58,7 +59,7 @@ const Insurance: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <Header isInsurance />
       <div id='insurance-container'>
         <div id="form-step-options">
           {steps.map((step: StepInterface, i: number) => {
@@ -69,6 +70,7 @@ const Insurance: React.FC = () => {
         {isActive === 'cars' && <CarsQuote />}
         {isActive === 'drivers' && <DriversQuote />}
       </div>
+      <InsuranceFooter />
     </>
   )
 }

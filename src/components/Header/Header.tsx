@@ -7,10 +7,12 @@ import LocationOnIcon from "../../images/Place Marker.png";
 import { Link } from "react-router-dom";
 import { leftMenuItems } from "./leftMenuItems";
 import { MenuItems } from "./MenuItems";
+
 interface HeaderProps {
+  isInsurance?: true
 }
 
-export const Header: React.FC<HeaderProps> = ({}) => {
+export const Header: React.FC<HeaderProps> = ({ isInsurance }) => {
   return (
     <header>
       <div className="header-container">
@@ -20,12 +22,15 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           </Link>
         </div>
         <div className="header-content">
-          <div className="account-panel">
-            <img src={PersonIcon} className="person-icon" />
-            <a className="login">Login</a>
-            <span className="or">Or</span>
-            <a className="register">Register</a>
-          </div>
+          {
+            !isInsurance &&
+            <div className="account-panel">
+              <img src={PersonIcon} className="person-icon" />
+              <a className="login">Login</a>
+              <span className="or">Or</span>
+              <a className="register">Register</a>
+            </div>
+          }
           <a href="tel:0800 887 637" className="phone-number">
             <img src={PhoneIcon} className="phone-icon" />
           </a>
@@ -34,7 +39,9 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           </a>
         </div>
       </div>
-      <nav className="main-menu">
+      {
+        !isInsurance &&
+        <nav className="main-menu">
         <div className="content">
           <ul className="left-menu">
             {leftMenuItems.map((menu, index) => {
@@ -48,6 +55,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           </ul>
         </div>
       </nav>
+      }
     </header>
   );
 };

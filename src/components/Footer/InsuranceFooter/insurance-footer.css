@@ -1,0 +1,65 @@
+#insurance-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2D2D2D;
+  color: white;
+  padding: 2rem 13%;
+  margin-top: 5rem;
+}
+
+#social-media > p {
+  margin-top: 0.2rem;
+}
+
+#if-social-media > img {
+  margin-right: 2rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+#terms-and-privacy {
+  display: flex;
+  justify-content: center;
+}
+
+#terms-and-privacy > a {
+  margin-top: 0.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+#terms-and-privacy > a:first-of-type {
+  margin-right: 2rem;
+}
+
+#terms-privacy-copyright > p {
+  text-align: center;
+}
+
+#terms-privacy-copyright > p:last-of-type {
+  margin: 5rem 0 0;
+}
+
+#icon-and-text {
+  display: flex;
+  align-items: top;
+}
+
+#icon-and-text > img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#icon-and-text > p {
+  margin-top: 0.2rem;
+  font-weight: bold;
+}
+
+#save-for-later-btn {
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
