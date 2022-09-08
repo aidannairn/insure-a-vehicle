@@ -63,7 +63,7 @@ const PoliciesAndExtras: React.FC<Props> = () => {
     <div>
       {
         familyDetails.map((driver: DriverDetails, i: number) => (
-          <DriverPolicy name={driver.name} />
+          <DriverPolicy key={i} name={driver.name} />
         ))
       }
       <FamilyPlanQuote familyDetails={familyDetails} />

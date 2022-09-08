@@ -1,4 +1,8 @@
+import { useEffect, useState } from 'react'
+
 import './family-plan-quote.css'
+
+import policyTypesData from '../DriverPolicy/PolicyTypes/policy-types-data'
 import FamilyMemberPolicy from './FamilyMemberPolicy/FamilyMemberPolicy'
 
 interface Insurance {
@@ -26,14 +30,34 @@ interface FamilyPlanQuoteProps {
 }
 
 const FamilyPlanQuote: React.FC<FamilyPlanQuoteProps> = ({ familyDetails }) => {
+  const [familyTotal, setFamilyTotal] = useState<number>(0)
+
+  useEffect(() => {
+    let initialValue = 0
+    const policiesTotal = familyDetails.reduce((prevVal, currDriver) => {
+      const matchedPolicy = policyTypes.filter(policy => policy.type === currDriver.insurance.type)
+      return prevVal + matchedPolicy[0].monthlyRate
+    }, initialValue)
+    setFamilyTotal(policiesTotal)
+  }, [])
+  
+
+  interface PolicyTypesInterface {
+    icon: string
+    type: string
+    monthlyRate: number
+    quarterlyRate: number
+    annualRate: number
+    famPlanDiscount?: boolean
+    cover: string
+    bgCol: string
+  }
+
+  const policyTypes: PolicyTypesInterface[] = policyTypesData
 
   const getMonthlyRate = (policyType: string) => {
-    switch (policyType) {
-      case 'comprehensive everyday plus': return 37
-      case 'third party property damage': return 28
-      case 'third party fire & theft': return 25
-      default: return 0
-    }
+    const matchedPolicy = policyTypes.filter(policy => policy.type === policyType)
+    return matchedPolicy[0].monthlyRate
   }
 
   return (
@@ -56,7 +80,7 @@ const FamilyPlanQuote: React.FC<FamilyPlanQuoteProps> = ({ familyDetails }) => {
         <div className="driver-policy-plans">
         {
           familyDetails.map((driver: DriverDetails, i: number) => (
-            <div className="driver-policy-plan">
+            <div key={i} className="driver-policy-plan">
               <div className="name-and-rate">
                 <p>{driver.name}'s Policy</p>
                 <p>${getMonthlyRate(driver.insurance.type)}/month</p>
@@ -68,7 +92,7 @@ const FamilyPlanQuote: React.FC<FamilyPlanQuoteProps> = ({ familyDetails }) => {
         </div>
         <div className="payment-plan-total">
           <p>Total Amount</p>
-          <p>$/month</p>
+          <p>${familyTotal}/month</p>
         </div>
         <p>Quote Reference Number: F0002967</p>
       </div>
