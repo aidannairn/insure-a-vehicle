@@ -79,6 +79,14 @@ const PoliciesAndExtras: React.FC<Props> = () => {
           <div id="send-quote-btn"><p>Send quote</p></div>
         </div>
       </div>
+      <div id="insurance-nav-btns">
+        <div className="insurance-nav-btn">
+          <p>Previous</p>
+        </div>
+        <div className="insurance-nav-btn solid">
+          <p>Go to Purchase</p>
+        </div>
+      </div>
     </div>
   )
 }
