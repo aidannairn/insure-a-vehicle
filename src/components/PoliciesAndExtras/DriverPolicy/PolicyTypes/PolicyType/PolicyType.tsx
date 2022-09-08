@@ -13,10 +13,13 @@ interface PolicyTypesInterface {
 }
 
 interface Props {
-  policyType: PolicyTypesInterface
+  policyType: PolicyTypesInterface,
+  driverIndex: number
+  setFamilyDetails: any
+  familyDetails: any
 }
 
-const PolicyType: React.FC<Props> = ({ policyType }) => {
+const PolicyType: React.FC<Props> = ({ policyType, driverIndex, setFamilyDetails, familyDetails }) => {
   const {
     type,
     monthlyRate,
@@ -26,6 +29,11 @@ const PolicyType: React.FC<Props> = ({ policyType }) => {
     mostPopular,
     cover
   } = policyType
+
+  const handlePolicySelect = () => {
+    familyDetails[driverIndex].insurance.type = type
+    setFamilyDetails([...familyDetails])
+  }
 
   return (
     <div className="policy-type">
@@ -44,7 +52,7 @@ const PolicyType: React.FC<Props> = ({ policyType }) => {
         </div>
       }
       <p className="cover">{cover}</p>
-      <div className="select-policy-btn">Select</div>
+      <div className="select-policy-btn" onClick={handlePolicySelect}>Select</div>
     </div>
   )
 }

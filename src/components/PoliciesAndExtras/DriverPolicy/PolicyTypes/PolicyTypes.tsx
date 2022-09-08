@@ -4,7 +4,13 @@ import PolicyType from './PolicyType/PolicyType'
 import policyTypesData from './policy-types-data'
 import './policy-types.css'
 
-const PolicyTypes: React.FC = () => {
+interface Props {
+  driverIndex: number
+  setFamilyDetails: any
+  familyDetails: any
+}
+
+const PolicyTypes: React.FC<Props> = ({ driverIndex, setFamilyDetails, familyDetails }) => {
   interface PolicyTypesInterface {
     icon: string
     type: string
@@ -19,6 +25,7 @@ const PolicyTypes: React.FC = () => {
 
   const policyTypes: PolicyTypesInterface[] = policyTypesData
 
+  const [policyIndex, setPolicyIndex] = useState(0)
   const [policyType, setPolicyType] = useState<PolicyTypesInterface>(policyTypes[0])
 
   const getAccentCol = () => {
@@ -31,7 +38,10 @@ const PolicyTypes: React.FC = () => {
     }
   }
 
-  const handlePolicyOptionClick = (i: number) => setPolicyType(policyTypes[i])
+  const handlePolicyOptionClick = (i: number) => {
+    setPolicyIndex(i)
+    setPolicyType(policyTypes[policyIndex])
+  }
 
   return (
     <div className="policy-types">
@@ -44,7 +54,7 @@ const PolicyTypes: React.FC = () => {
         ))}
       </div>
       <div className='pt-bg-accent' style={{ backgroundColor: getAccentCol() }} />
-      <PolicyType policyType={policyType} />
+      <PolicyType policyType={policyType} driverIndex={driverIndex} setFamilyDetails={setFamilyDetails} familyDetails={familyDetails} />
       <div className='check-policy'>
         <a className="check-policy" href="#">Check Policy</a>
       </div>

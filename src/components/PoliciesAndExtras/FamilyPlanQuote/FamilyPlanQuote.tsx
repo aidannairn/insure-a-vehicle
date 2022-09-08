@@ -39,7 +39,7 @@ const FamilyPlanQuote: React.FC<FamilyPlanQuoteProps> = ({ familyDetails }) => {
       return prevVal + matchedPolicy[0].monthlyRate
     }, initialValue)
     setFamilyTotal(policiesTotal)
-  }, [])
+  }, [familyDetails])
   
 
   interface PolicyTypesInterface {
@@ -68,7 +68,7 @@ const FamilyPlanQuote: React.FC<FamilyPlanQuoteProps> = ({ familyDetails }) => {
       <div id="family-policies">
         {
           familyDetails.map((driver: DriverDetails, i: number) => (
-            <FamilyMemberPolicy key={i} driver={driver} />
+            <FamilyMemberPolicy key={i} driver={driver} policyTypes={policyTypes} />
           ))
         }
       </div>

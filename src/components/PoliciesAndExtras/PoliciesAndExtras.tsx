@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 import DriverPolicy from "./DriverPolicy/DriverPolicy"
 import FamilyPlanQuote from "./FamilyPlanQuote/FamilyPlanQuote"
 
@@ -28,44 +30,49 @@ const PoliciesAndExtras: React.FC<Props> = () => {
     additionalDrivers: number
   }
 
-  const familyDetails: DriverDetails[] = [
-    {
-      name: 'Jack',
-      insurance: {
-        type: 'comprehensive everyday plus',
-        amount: 4000,
-        excess: 1000
-      },
-      addOns: ['mechanical breakdown'],
-      car: {
-        make: 'toyota',
-        model: 'prius',
-        year: 2021
-      },
-      additionalDrivers: 1
-    },
-    {
-      name: 'Jill',
-      insurance: {
-        type: 'third party fire & theft',
-        amount: 1000,
-        excess: 100
-      },
-      addOns: [],
-      car: {
-        make: 'honda',
-        model: 'civic',
-        year: 2000
-      },
-      additionalDrivers: 0
-    }
-  ]
+  const [familyDetails, setFamilyDetails] = useState<DriverDetails[]>([])
 
+  useEffect(() => {
+    const initialFamDetails = [
+      {
+        name: 'Jack',
+        insurance: {
+          type: 'comprehensive everyday plus',
+          amount: 4000,
+          excess: 1000
+        },
+        addOns: ['mechanical breakdown'],
+        car: {
+          make: 'toyota',
+          model: 'prius',
+          year: 2021
+        },
+        additionalDrivers: 1
+      },
+      {
+        name: 'Jill',
+        insurance: {
+          type: 'third party fire & theft',
+          amount: 1000,
+          excess: 100
+        },
+        addOns: [],
+        car: {
+          make: 'honda',
+          model: 'civic',
+          year: 2000
+        },
+        additionalDrivers: 0
+      }
+    ]
+    setFamilyDetails(initialFamDetails)
+  }, [])
+  
   return (
     <div>
       {
         familyDetails.map((driver: DriverDetails, i: number) => (
-          <DriverPolicy key={i} name={driver.name} />
+          <DriverPolicy key={i} name={driver.name} driverIndex={i} setFamilyDetails={setFamilyDetails} familyDetails={familyDetails} />
         ))
       }
       <FamilyPlanQuote familyDetails={familyDetails} />

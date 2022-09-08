@@ -20,11 +20,23 @@ interface DriverDetails {
   additionalDrivers: number
 }
 
-interface Props {
-  driver: DriverDetails
+interface PolicyTypesInterface {
+  icon: string
+  type: string
+  monthlyRate: number
+  quarterlyRate: number
+  annualRate: number
+  famPlanDiscount?: boolean
+  cover: string
+  bgCol: string
 }
 
-const FamilyMemberPolicy: React.FC<Props> = ({ driver }) => {
+interface Props {
+  driver: DriverDetails
+  policyTypes: PolicyTypesInterface[]
+}
+
+const FamilyMemberPolicy: React.FC<Props> = ({ driver, policyTypes }) => {
   const {
     name,
     insurance,
@@ -38,19 +50,20 @@ const FamilyMemberPolicy: React.FC<Props> = ({ driver }) => {
   const { make, model, year } = car
 
   const getPolicyIcon = (policyType: string) => {
-    switch (policyType) {
-      case 'comprehensive everyday plus': return 'comprehensive'
-      case 'third party property damage': return 'property-damage'
-      case 'third party fire & theft': return 'fire-and-theft'
-      default: return 'comprehensive'
-    }
+    const matchedPolicy = policyTypes.filter(policy => policy.type === policyType)
+    return matchedPolicy[0].icon
+  }
+
+  const getCol = (policyType: string) => {
+    const matchedPolicy = policyTypes.filter(policy => policy.type === policyType)
+    return matchedPolicy[0].bgCol
   }
 
   return (
     <div className="family-member-policy">
       <p>{name}'s Policy</p>
-      <div className="icon-and-type-container">
-        <img src={`images/${getPolicyIcon(type)}-icon.png`} alt="Policy" />
+      <div className="icon-and-type-container" style={{backgroundColor: getCol(type)}}>
+        <img src={getPolicyIcon(type)} alt="Policy" />
         <p>{type}</p>
       </div>
       <p>{make} {model} {year}</p>
