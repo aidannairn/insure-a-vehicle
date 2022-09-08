@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import { Header } from '../components/Header/Header'
 import PoliciesAndExtras from '../components/PoliciesAndExtras/PoliciesAndExtras'
+import DriversQuote from '../components/DriversQuote/DriversQuote'
+import CarsQuote from '../components/CarsQuote/CarsQuote'
 import './insurance.css'
 
 interface StepInterface {
@@ -32,7 +34,7 @@ const FormStepOption: React.FC<StepOptionProps> = ({ step, setIsActive }) => {
   )
 }
 
-const Insurance: React.FC = () => {
+const Insurance: React.FC = (test2) => {
   const [isActive, setIsActive] = useState<string>('drivers')
   const [isComplete, setIsComplete] = useState<string[]>([])
 
@@ -64,9 +66,12 @@ const Insurance: React.FC = () => {
           })}
         </div>
         {isActive === 'policies & extras' && <PoliciesAndExtras />}
+        {isActive === 'cars' && <CarsQuote />}
+        {isActive === 'drivers' && <DriversQuote />}
       </div>
     </>
   )
 }
+
 
 export default Insurance

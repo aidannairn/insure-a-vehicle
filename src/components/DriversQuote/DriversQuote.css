@@ -1,0 +1,129 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#addMemberButton {
+    width: 75%;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #fff;
+    background-color: #2376BD;
+    border-color: #2376BD;
+    border-style: none;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+#addMemberButton:hover {
+    background-color: #1f68a8;
+}
+
+#addMemberButton img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.NavButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+#previous {
+    color: #2376BD;
+    background-color: #fff;
+    border-color: #2376BD;
+    border-style: solid;
+    border-radius: 30px;
+    width: 300px;
+    height: 60px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#next {
+    color: #fff;
+    background-color: #2376BD;
+    border-color: #2376BD;
+    border-style: none;
+    border-radius: 30px;
+    width: 300px;
+    height: 60px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.homeImg img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.homeImg select {
+    position: absolute;
+    top: 33.5%;
+    left: 48%;
+    height: 50px;
+    width: 700px;
+    font-size: 1.6em;
+    background-color: #F0F4FC;
+    border-style: solid;
+    border-color: #F0F4FC;
+    border-radius: 10px;
+    color: grey;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url('../../images/down-arrow.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 2em auto, 100%;
+    background-color: #F0F4FC;
+}
+
+.homeImg button {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    font-size: 30px;
+    color: #fff;
+    background-color: #004681;
+    border-color: #2376BD;
+    border-style: none;
+    border-radius: 30px;
+    width: 400px;
+    height: 80px;
+    margin-right: 200px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.homeImg button:hover {
+    background-color: #0060af;
+}
+
+.quoteHomeText {
+    margin-top: -20px;
+    background-color: #F5F5F5;
+    padding-top: 50px;
+}
+
+.quoteHomeText img {
+    float: right;
+}
+
+.quoteHomeText p {
+    font-size: larger;
+    padding-bottom: 90px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.quoteHomeText h1 {
+    margin-left: 100px;
+    margin-top: 50px;
+}
