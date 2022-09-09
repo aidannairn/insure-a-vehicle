@@ -2,16 +2,26 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Dropdown } from "./Dropdown";
 
+interface Item {
+  title: string;
+  url: string;
+  [key: string]: any;
+}
+
 interface MenuItemsProps {
-  items: any;
+  items: Item;
   key: number;
   depthLevel: number;
 }
 
-export const MenuItems: React.FC<MenuItemsProps> = ({ items,depthLevel }) => {
+export const MenuItems: React.FC<MenuItemsProps> = ({
+  items,
+  depthLevel,
+  key,
+}) => {
   const [dropdown, setDropdown] = React.useState(false);
 
-const ref = useRef<HTMLLIElement>(null)
+  const ref = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const handler = (event: { target: any; }) => {
@@ -41,7 +51,13 @@ const ref = useRef<HTMLLIElement>(null)
             {items.title}{" "}
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
           </Link>
-          <Dropdown depthLevel={depthLevel} submenus={items.submenu} dropdown={dropdown} key={0} items={undefined}/>
+          <Dropdown
+            depthLevel={depthLevel}
+            submenus={items.submenu}
+            dropdown={dropdown}
+            key={key}
+            items={items}
+          />
         </>
       ) : (
         <a href={items.url}>{items.title}</a>
