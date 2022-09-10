@@ -77,3 +77,7 @@
   background-color: #004681;
   cursor: pointer;
 }
+
+.select-policy-btn:active {
+  background-color: #013662;
+}

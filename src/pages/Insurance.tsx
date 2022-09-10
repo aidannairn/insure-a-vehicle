@@ -36,8 +36,8 @@ const FormStepOption: React.FC<StepOptionProps> = ({ step, setIsActive }) => {
 }
 
 const Insurance: React.FC = () => {
-  const [isActive, setIsActive] = useState<string>('drivers')
-  const [isComplete, setIsComplete] = useState<string[]>([])
+  const [isActive, setIsActive] = useState<string>('policies & extras')
+  const [isComplete, setIsComplete] = useState<string[]>(['drivers', 'cars'])
 
   const steps: StepInterface[] = [
     {

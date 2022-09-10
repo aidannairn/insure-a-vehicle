@@ -38,10 +38,10 @@ const PoliciesAndExtras: React.FC<Props> = () => {
         name: 'Jack',
         insurance: {
           type: 'comprehensive everyday plus',
-          amount: 4000,
-          excess: 1000
+          amount: 1000,
+          excess: 100
         },
-        addOns: ['mechanical breakdown'],
+        addOns: [],
         car: {
           make: 'toyota',
           model: 'prius',
@@ -52,7 +52,7 @@ const PoliciesAndExtras: React.FC<Props> = () => {
       {
         name: 'Jill',
         insurance: {
-          type: 'third party fire & theft',
+          type: 'comprehensive everyday plus',
           amount: 1000,
           excess: 100
         },

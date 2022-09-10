@@ -13,10 +13,13 @@ interface DriverPolicyProps {
 
 const DriverPolicy: React.FC<DriverPolicyProps> = ({ name, driverIndex, setFamilyDetails, familyDetails }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false)
+  const [excess, setExcess] = useState(100)
 
   const handleArrowClick = () => setIsExpanded(!isExpanded)
 
   const excessAmounts: number[] = [100, 400, 500, 1000, 2000]
+
+  const handleExcessClick = (amount: number) => setExcess(amount)
 
   return (
     <div className="driver-policy">
@@ -35,7 +38,7 @@ const DriverPolicy: React.FC<DriverPolicyProps> = ({ name, driverIndex, setFamil
           <p>How much would you like {name}'s policy excess to be?</p>
           <div className="excess-amounts">
             {excessAmounts.map((amount: number, i: number) => 
-              <div key={i} className='excess-amount'>
+              <div key={i} className={`excess-amount ${amount === excess ? 'active' : null}`} onClick={() => handleExcessClick(amount)} >
                 <p>${amount}</p>
               </div>
             )}

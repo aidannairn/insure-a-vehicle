@@ -83,3 +83,11 @@
   font-weight: bold;
   color: #004681;
 }
+
+.excess-amount.active {
+  background-color: #1078CE;
+}
+
+.excess-amount.active p {
+  color: white;
+}
